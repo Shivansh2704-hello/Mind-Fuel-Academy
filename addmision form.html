@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admission Form</title>
+  <link rel="stylesheet" href="addmision.css">
+  <link rel="icon" type="image/png" href="Untitled design.png">
+</head>
+<body>
+    <header>
+    <div class="Nav-bar">
+      <div class="logo">
+        <a href="index.html"><img src="MindFuel Academy.png"  alt="logo"/></a>
+      </div>
+      <div class="Nav-bar-content">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <a href="#" class="dropbtn" onclick="toggleDropdown()">Courses ▾</a>
+          <div class="dropdown-content" id="courseDropdown">
+            <a href="#">Class 6</a>
+            <a href="#">Class 7</a>
+            <a href="#">Class 8</a>
+            <a href="#">Class 9</a>
+            <a href="#">Class 10</a>
+            <!-- <a href="#">Class 11</a>
+            <a href="#">Class 12</a> -->
+            <a href="#">Competitive Exams (Coming Soon)</a>
+          </div>
+        </div>
+
+        <a href="addmision form.html" target="_blank" >Admission Form</a>
+        <a href="Scholarship form.html">Scholarship from</a>
+        <a href="#">Fees Structure</a>
+        <a href="#">Contact Us</a>
+        <a href="#">About us</a>
+        <a href="diff-select.html" target="_blank">Login/Registration</a>
+      </div>
+    </div>
+    </header>
+    <div class="Form-content">
+      <h2>Admission Form</h2>
+  <form action="#" method="post">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="F.name">Father's Name</label>
+    <input type="text" id="F.name" name="F.name" required />
+
+    <label for="M.name">Mother's Name</label>
+    <input type="text" id="M.name" name="M.name" required />
+
+    <label for="DOB">Date of Birth</label>
+    <input type="date" id="DOB" name="DoB" required />
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="e.g. 9876543210"/>
+
+    
+    <label for="alt.phone">Alternate Number</label>
+    <input type="tel" id="alt.phone" name="phone" required pattern="[0-9]{10}" placeholder="e.g. 9876543210"/>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="gender">Gender</label>
+    <select id="gender" name="Gender" required>
+        <option value="">--Gender--</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+
+    <label for="course">Choose Grade</label>
+    <select id="course" name="course" required>
+      <option value="">--Select Course--</option>
+      <option value="Class 6">Class 6</option>
+      <option value="Class 7">Class 7</option>
+      <option value="Class 8">Class 8</option>
+      <option value="Class 9">Class 9</option>
+      <option value="Class 10">Class 10</option>
+      <option value="Competitive Exams">Competitive Exams</option>
+    </select>
+
+    <label for="Catagories">Choose Catagories</label>
+    <select id="Catagories" name="Catagories" required>
+      <option value="">--Select Catagories--</option>
+      <option value="General">General</option>
+      <option value="Genaral(EWS)">General(EWS)</option>
+      <option value="OBC">OBC</option>
+      <option value="ST">ST</option>
+      <option value="SC">SC</option>
+    </select>
+
+    <button type="submit">Submit</button>
+  </form>
+    </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

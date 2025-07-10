@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login / Register</title>
+  <link rel="stylesheet" href="login.css" />
+  <link rel="icon" type="image/png" href="Untitled design.png">
+</head>
+<body>
+  <div class="form-container">
+    <div class="tab-buttons">
+      <button onclick="showForm('login')" id="loginTab" class="active">Login</button>
+      <button onclick="showForm('register')" id="registerTab">Register</button>
+    </div>
+
+    
+    <form id="loginForm" class="form active">
+      <h2>Login</h2>
+      <label>Email</label>
+      <input type="email" required />
+      <label>Password</label>
+      <input type="password" required />
+      <button type="submit">Login</button>
+    </form>
+
+    
+    <form id="registerForm" class="form">
+      <h2>Register</h2>
+      <label>Full Name</label>
+      <input type="text" required />
+      <label>Email</label>
+      <input type="email" required />
+      <label>Phone Number</label>
+      <input type="tel" pattern="[0-9]{10}" required />
+      <label>Password</label>
+      <input type="password" required />
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

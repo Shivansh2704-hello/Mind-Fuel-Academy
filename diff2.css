@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    /* background-image: url(gradient.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+}
+
+/* ✅ Logo on top */
+.logo {
+    width: 120px;
+    height: auto;
+    margin: 20px auto 0 auto;
+    text-align: center;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+}
+
+/* ✅ Container for cards */
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 20px;
+    background-color: white;
+}
+
+/* ✅ Cards */
+.card {
+    width: 320px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+button {
+    border-radius: 10px;
+    width: 90px;
+    height: 40px;
+    background-color: yellow;
+    border: none;
+    font-weight: bold;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+}
+
+button:hover,
+button a:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    .logo {
+        width: 80px;
+        margin-top: 10px;
+    }
+
+    .logo img {
+        max-width: 80px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
